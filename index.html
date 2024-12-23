@@ -10,36 +10,40 @@
     <style>
       section {
         height: 50vh;
-        width: 100vw;
+        width: 30vw;
         overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
+        margin: 0 auto;
       }
+      h1{
+        text-align: center;
+        padding-block: 1rem;
+      }
+
     </style>
     <script type="module">
       const bgchange = document.querySelector(".background-change");
       bgchange.addEventListener("scroll", () => {
         const scrollPercentage =
           bgchange.scrollTop / (bgchange.scrollHeight - bgchange.clientHeight);
-        bgchange.style.backgroundColor = `rgba(0, 0, 0, ${scrollPercentage})`;
+        bgchange.style.backgroundColor = `hsl(${scrollPercentage * 30}, 100%, 50%)`;
       });
     </script>
     <main>
+      <h1>Cambio de color de fondo</h1>
       <section class="background-change">
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
-        <h1>Scroll Percentage</h1>
-        <p>Scroll down to see the background color change</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
+        <p>To change the background color of this section, scroll down</p>
       </section>
     </main>
   </body>
