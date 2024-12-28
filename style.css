@@ -1,4 +1,4 @@
-section {
+.background-change {
   height: 50vh;
   width: 30vw;
   overflow-y: scroll;
@@ -8,6 +8,12 @@ section {
   background-color: red;
   margin: 0 auto;
 }
+
+.background-change p {
+  text-align: center;
+  padding-block: 3rem;
+}
+
 h1 {
   text-align: center;
   padding-block: 1rem;
