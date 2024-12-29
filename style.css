@@ -7,6 +7,7 @@
   align-items: center;
   background-color: red;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .background-change p {
@@ -17,4 +18,46 @@
 h1 {
   text-align: center;
   padding-block: 1rem;
+}
+
+.parallax {
+  background-image: url("https://picsum.photos/1000/720?grayscale");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer-1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.layer-2 {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+.layer-3 {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 100%;
+}
+
+.layer-1 span {
+  font-size: 3rem;
+  color: white;
+}
+
+.layer-2 span {
+  font-size: 2rem;
+  color: white;
+}
+
+.layer-3 span {
+  font-size: 1rem;
+  color: white;
 }
